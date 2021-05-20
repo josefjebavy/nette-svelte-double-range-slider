@@ -1,0 +1,25 @@
+version: '3.6'
+
+services:
+
+  web:
+    image: josefjebavy/debian-apache-php8.0-nette
+    environment:
+     - NETTE_DEBUG=1
+    working_dir: /var/www/html
+    volumes:
+      - .:/var/www/html
+    ports:
+      - 8081:80
+      - 8082:443
+
+  npm:
+    image: node:15
+    volumes:
+        - .:/app
+    working_dir: /app
+    command:  bash -c "npm install "
+
+
+
+

@@ -1,3 +1,11 @@
+#php libraries
+vendor
+
+#sveltebuild
+www/build/
+
+temp 
+
 # Logs
 logs
 *.log
