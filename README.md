@@ -1,5 +1,8 @@
 # nette-svelte-double-range-slider
-Double range slider using Nette an Svelte JS
+Double range slider using Nette and Svelte JS
+
+About Svelte JS in Czech language: https://www.sveltejs.cz/
+
 
 This example is based on:
 https://github.com/mhkeller/svelte-double-range-slider
