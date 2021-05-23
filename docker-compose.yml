@@ -12,6 +12,14 @@ services:
     ports:
       - 8081:80
       - 8082:443
+  composer:
+    image: josefjebavy/debian-apache-php8.0-nette
+    environment:
+     - NETTE_DEBUG=1
+    working_dir: /var/www/html
+    volumes:
+      - .:/var/www/html
+    command: composer install
 
   npm:
     image: node:15
